@@ -24,11 +24,11 @@ USB2UART + HC05(BT host), PC端只要考慮/dev/ttyUSB0,省事
 0x03保留字,把左右側PWM參數緩衝區的資料寫到PWM產生器,保証左右動作會一致.  
 
 # 架設
-auduino --- 電子變速器2x --- 馬達x2
+PC(Linux) --- USB2UART(FT232) --- HC05(BT host) --- HC05(BT device) --- arduino  --- 電子變速器2x --- 馬達x2  
 
 # 測試  
 把code燒到arduino  
-測試時可以省略HC05
+測試時可以省略HC05  
 PC(Linux) --- USB2UART(FT232) --- auduino --- 電子變速器2x --- 馬達x2  
 
 PC(Linux)不用寫code, 用echo就可以測試了  
