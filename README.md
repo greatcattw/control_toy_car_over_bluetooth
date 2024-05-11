@@ -3,7 +3,7 @@ Making a toy car by arduino+bluetooth
 建立一台由可用藍芽操作的玩具車,玩具車使用2個馬達  
 使用arduino + HC05
 
-建意使用  
+建議使用  
 PC(Linux) + USB2UART(FT232) + HC05(BT host) 控制 HC05(BT device) + arduino  
 而不要  
 PC(Linux) + PC的藍芽 控制 HC05(BT device) + arduino  
