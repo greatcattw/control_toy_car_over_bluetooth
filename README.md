@@ -13,20 +13,20 @@ USB2UART + HC05(BT host), PC端只要考慮/dev/ttyUSB0,省事
 自行google一下  
 
 本案使用電子變速器控制馬達轉速與正反轉    
-電子變速器的控制,類似於舵機的PWM控制  
+電子變速器的控制,類似於舵機(Servo)的控制  
 以筆者的電子變速器, 值0x64馬達不轉, 大於0x64馬達正轉, 小於0x64馬達逆轉  
 
 # 通訊協定
 5個byte為一組.  
 0x01 0x## 0x02 0x## 0x03  
-0x01保留字,下一個byte放入右側PWM參數緩衝區,值為4-255  
-0x02保留字,下一個byte放入左側PWM參數緩衝區,值為4-255  
-0x03保留字,把左右側PWM參數緩衝區的資料寫到PWM產生器,讓左右動作有最少的時間差
+0x01保留字,下一個byte放入右側舵機參數緩衝區,值為4-255  
+0x02保留字,下一個byte放入左側舵機參數緩衝區,值為4-255  
+0x03保留字,把左右側舵機參數緩衝區的資料寫到舵機訊號產生器,讓左右動作有最少的時間差
 
 # 架設
 PC(Linux) --- USB2UART(FT232) --- HC05(BT host) --- HC05(BT device) --- arduino  --- 電子變速器2x --- 馬達x2  
 電子變速器有5V可以給arduino UNO  
-使用arduino UNO pin#9及pin#10的PWM控制電子變速器  
+使用arduino UNO pin#9及pin#10控制電子變速器  
 HC05接5v, GND, 以及TX接到arduino UNO pin#0  
 ![pic](pic/pic1.jpg)<br>
 <br>
@@ -46,4 +46,4 @@ echo -ne "\x1\x6e\x2\x6e\x3" > /dev/ttyUSB0
 馬達停止
 echo -ne "\x1\x64\x2\x64\x3" > /dev/ttyUSB0  
 
-# In progress  
+
