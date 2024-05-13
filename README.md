@@ -45,7 +45,7 @@ stty -F /dev/ttyUSB0 ispeed 9600 cs8 -parenb -cstopb
 馬達低速正轉  
 echo -ne "\x1\x6e\x2\x6e\x3" > /dev/ttyUSB0  
 
-馬達停止
+馬達停止  
 echo -ne "\x1\x64\x2\x64\x3" > /dev/ttyUSB0  
 
 
