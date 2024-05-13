@@ -4,11 +4,13 @@ Making a toy car by arduino+bluetooth
 使用arduino + HC05
 
 建議使用  
-PC(Linux) + USB2UART(FT232) + HC05(BT host) 控制 HC05(BT device) + arduino  
+PC(Linux) + USB2UART(FT232) + HC05(BT host) 控制 
+HC05(BT device) + arduino  
 而不要  
-PC(Linux) + PC的藍芽 控制 HC05(BT device) + arduino  
+PC(Linux) + PC的藍芽 控制  
+HC05(BT device) + arduino  
 
-USB2UART + HC05(BT host), PC端只要考慮/dev/ttyUSB0,省事  
+使用USB2UART + HC05(BT host), PC端只要考慮/dev/ttyUSB0,省事  
 如何配對HC05(BT host)與HC05(BT device)  
 自行google一下  
 
