@@ -25,6 +25,7 @@ USB2UART + HC05(BT host), PC端只要考慮/dev/ttyUSB0,省事
 
 # 架設
 PC(Linux) --- USB2UART(FT232) --- HC05(BT host) --- HC05(BT device) --- arduino  --- 電子變速器2x --- 馬達x2  
+使用arduino UNO pin#9及pin#10的PWM  
 ![pic](pic/pic1.jpg)<br>
 <br>
 <br>
