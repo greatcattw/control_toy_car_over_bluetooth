@@ -21,12 +21,12 @@ USB2UART + HC05(BT host), PC端只要考慮/dev/ttyUSB0,省事
 0x01 0x## 0x02 0x## 0x03  
 0x01保留字,下一個byte放入右側PWM參數緩衝區,值為4-255  
 0x02保留字,下一個byte放入左側PWM參數緩衝區,值為4-255  
-0x03保留字,把左右側PWM參數緩衝區的資料寫到PWM產生器,保証左右動作會一致.  
+0x03保留字,把左右側PWM參數緩衝區的資料寫到PWM產生器,讓左右動作有最少的時間差
 
 # 架設
 PC(Linux) --- USB2UART(FT232) --- HC05(BT host) --- HC05(BT device) --- arduino  --- 電子變速器2x --- 馬達x2  
 電子變速器有5V可以給arduino UNO  
-使用arduino UNO pin#8及pin#9的PWM控制電子變速器  
+使用arduino UNO pin#9及pin#10的PWM控制電子變速器  
 HC05接5v, GND, 以及TX接到arduino UNO pin#0  
 ![pic](pic/pic1.jpg)<br>
 <br>
