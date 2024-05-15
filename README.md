@@ -13,6 +13,10 @@ HC05(BT device) + arduino
 使用USB2UART + HC05(BT host), PC端只要考慮/dev/ttyUSB0,省事  
 如何配對HC05(BT host)與HC05(BT device)  
 自行google一下  
+key word for ubuntu  
+picocom /dev/ttyUSB0 -b 38400 --omap crcrlf --echo  
+AT+ROLE=1  
+AT+BIND=98da,20,xxxxxx  
 
 本案使用電子變速器控制馬達轉速與正反轉    
 電子變速器的控制,類似於舵機(Servo)的控制  
