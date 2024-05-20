@@ -55,7 +55,7 @@ echo -ne "\x1\x64\x2\x64\x3" > /dev/ttyUSB0
 電子變速器選用注意事項:  
 ### BEC電壓準位:  
 因為Arduino是5V電壓準位,所以,  
-電子變速器的BEC電源,目標是5V的.有些電子變速器BEC輸出6V,直接供電給arduino,可能會燒掉arduino.  
+電子變速器的BEC電源,目標要5V.有些電子變速器BEC輸出6V,直接供電給arduino,可能會燒掉arduino.  
 若Arduino吃5V電,PWM控制6V的電子變速器,可能也會發生不穩的問題.  
 例如:  
 ![pic](pic/sample.png)<br>
