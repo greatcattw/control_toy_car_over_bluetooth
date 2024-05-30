@@ -70,13 +70,13 @@ echo -ne "\x1\x64\x2\x64\x3" > /dev/ttyUSB0
 有好心網友提到,若是車輛不大,可以用連續旋轉式的舵機,加樂高的連軸器及輪子.<br>
 ![pic](pic/lego_wheel.jpg)<br>
 <br>
-小舵機連軸器<br>  
+小舵機連軸器<br>
 ![pic](pic/sg90.jpg)<br>
 <br>
 大舵機連軸器<br>
 ![pic](pic/mg995.jpg)<br>
 <br>
-用於更複雜的PID演算法
+用於更複雜的PID演算法<br>
 <br>
 TT馬達連軸器<br>
 ![pic](pic/tt.jpg)<br>
